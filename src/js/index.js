@@ -86,13 +86,17 @@ const subtitleDisabled = () => {
 
 //- Crea un input range con un label, al mover el input range deberá escribir en el label el valor del input range.
 
-const labelElement = document.getElementById('name');
+const labelElement = document.getElementById('label');
 const inputElement = document.getElementById('range');
 
-const showValue = () => {
-  labelElement.textContent = inputElement.value;
+const showValue = event => {
+  labelElement.textContent = event.target.value;
 };
 
 inputElement.addEventListener('input', showValue);
 
 //- Crea una lista de 4 checkbox con el texto que quieras y un botón, al pulsar el botón deberá decirte cuantos checkbox están marcados y cual es su texto.
+
+
+
+
